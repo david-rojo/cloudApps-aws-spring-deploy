@@ -82,6 +82,12 @@
 			<version>3.0.6</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- aws s3 -->
+		<dependency>
+	    	<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-s3</artifactId>
+			<version>1.11.969</version>
+		</dependency>
 	</dependencies>
 
 	<build>
