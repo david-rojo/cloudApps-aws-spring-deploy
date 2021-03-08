@@ -19,3 +19,6 @@ $ sudo java -DRDS_ENDPOINT="<rds-db-endpoint>" -DRDS_DATABASE="<rds-database>" -
 ```
 https://localhost:8443/h2-console/login.jsp
 ```
+## Author
+
+[David Rojo (@david-rojo)](https://github.com/david-rojo)
