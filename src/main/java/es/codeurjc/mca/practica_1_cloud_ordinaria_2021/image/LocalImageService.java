@@ -41,7 +41,9 @@ public class LocalImageService implements ImageService {
 
     @Override
     public void deleteImage(String image) {
-        Path path = FileSystems.getDefault().getPath(staticFolder() + image);
+    	String[] tokens = image.split("/");
+        String image_name = tokens[tokens.length -1 ];
+        Path path = FileSystems.getDefault().getPath(staticFolder() + "events/" + image_name);
         try {
             Files.deleteIfExists(path);
         } catch (Exception e){
