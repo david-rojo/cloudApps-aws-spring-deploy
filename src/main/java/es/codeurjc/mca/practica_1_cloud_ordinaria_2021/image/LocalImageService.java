@@ -27,7 +27,7 @@ public class LocalImageService implements ImageService {
 
     @Override
     public String createImage(MultipartFile multiPartFile) {
-        String fileName = "image_" + UUID.randomUUID() + "_" +multiPartFile.getOriginalFilename();
+        String fileName = "image_" + UUID.randomUUID() + "_" + multiPartFile.getOriginalFilename();
         String path = "events/"+ fileName;
         File file = new File(staticFolder() + path);
         try {
